@@ -2,8 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { StickyMobileCta } from "@/components/layout/StickyMobileCta";
 import { Hero } from "@/components/hero/Hero";
-import { OpeningStatement } from "@/components/projects/OpeningStatement";
-import { ProjectShowroom } from "@/components/projects/ProjectShowroom";
+import { ShowroomSection } from "@/components/projects/ShowroomSection";
 import {
   MaterialComparison,
   MaterialExplorer,
@@ -22,8 +21,7 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
-        <OpeningStatement />
-        <ProjectShowroom />
+        <ShowroomSection />
         <MaterialExplorer />
         <MaterialComparison />
         <Applications />

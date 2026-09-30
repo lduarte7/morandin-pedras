@@ -10,7 +10,7 @@ export const applications = [
   {
     id: "banheiros",
     name: "Banheiros",
-    description: "Precisão no encontro com a water.",
+    description: "Precisão no encontro com a água.",
     image: IMG.appBath,
   },
   {

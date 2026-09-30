@@ -31,13 +31,17 @@ export function QuoteFlow() {
     <section id="orcamento" className="bg-nero py-20 md:py-28">
       <div className="container-editorial">
         <Reveal>
-          <h2 className="type-display max-w-3xl text-calacatta">
+          <p className="type-label text-calacatta/55">
+              Orçamento personalizado
+            </p>
+          <h2 className="type-display mt-4 max-w-3xl text-calacatta">
             Monte seu
             <br />
             pedido de orçamento.
           </h2>
           <p className="mt-6 max-w-xl text-base text-calacatta/75 md:text-[18px]">
-            Em poucos passos, você nos conta sobre seu projeto.
+            Nos conte sobre o seu projeto para receber um atendimento
+            especializado.
           </p>
         </Reveal>
 

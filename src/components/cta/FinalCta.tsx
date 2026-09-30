@@ -37,7 +37,12 @@ export function FinalCta() {
             sobre materiais e execução.
           </p>
           <div className="mt-8 flex w-full max-w-lg flex-col gap-3 sm:flex-row">
-            <Button href={buildWhatsAppUrl()} external fullWidth className="sm:w-auto">
+            <Button
+              href={buildWhatsAppUrl()}
+              external
+              fullWidth
+              className="sm:w-auto"
+            >
               <span>Solicitar orçamento</span>
               <span aria-hidden>→</span>
             </Button>
@@ -54,11 +59,32 @@ export function FinalCta() {
           </div>
         </Reveal>
 
-        <div className="mt-16 flex flex-col gap-3 border-t border-[var(--border-dark)] pt-6 md:flex-row md:items-center md:justify-between">
-          <p className="type-label text-calacatta/70">Da pedra ao ambiente.</p>
-          <p className="text-[11px] tracking-[0.16em] text-calacatta/60 uppercase">
-            Ideia — Projeto — Execução — Seu espaço
-          </p>
+        <div className="mt-16 flex flex-col gap-4 border-t border-[var(--border-dark)] pt-6 md:flex-row md:items-center md:justify-between">
+          <div>
+            <svg
+              className="mb-3 w-40 opacity-80"
+              viewBox="0 0 160 20"
+              fill="none"
+              aria-hidden
+            >
+              <path
+                d="M1 12 C20 4, 35 16, 55 10 S90 2, 110 12 S140 18, 159 8"
+                stroke="rgba(243,240,233,0.7)"
+                strokeWidth="1"
+              />
+            </svg>
+            <p className="type-label text-calacatta/70">Da pedra ao ambiente.</p>
+          </div>
+          <ol className="flex flex-wrap items-center gap-x-3 gap-y-2 text-[10px] uppercase tracking-[0.16em] text-calacatta/65 md:gap-x-4">
+            {["Ideia", "Projeto", "Execução", "Seu espaço"].map((step, i, arr) => (
+              <li key={step} className="flex items-center gap-3">
+                <span>{step}</span>
+                {i < arr.length - 1 ? (
+                  <span className="inline-block h-1 w-1 rounded-full bg-calacatta/50" />
+                ) : null}
+              </li>
+            ))}
+          </ol>
         </div>
       </div>
     </section>

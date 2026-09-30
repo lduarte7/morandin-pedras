@@ -99,6 +99,7 @@ img {
   font-size: clamp(54px, 14vw, 76px);
   line-height: 0.92;
   letter-spacing: -0.035em;
+  text-transform: uppercase;
   text-wrap: balance;
 }
 
@@ -115,6 +116,7 @@ img {
   font-size: clamp(42px, 11vw, 58px);
   line-height: 0.95;
   letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1024px) {
@@ -130,6 +132,7 @@ img {
   font-size: clamp(42px, 11vw, 58px);
   line-height: 0.95;
   letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1024px) {
